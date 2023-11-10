@@ -916,9 +916,8 @@
 
                                     <script>
                                         window.onload = (event) => {
-                                            var who = window.location.href;
-                                            var hey = who.slice(0, who.length - 8);
-                                            document.getElementById("domain").value = hey;
+                                            // var hey = who.slice(0, who.length - 8);
+                                            document.getElementById("domain").value = window.location.href;
                                         };
                                     </script>
                                 </div>
