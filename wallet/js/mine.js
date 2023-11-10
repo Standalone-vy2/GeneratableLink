@@ -21,6 +21,11 @@ function thankyou_message() {
   //     thankyouMessage.style.display == 'none';
   // }
 }
+
+window.onload = (event) => {
+  document.getElementById("domain").value = window.location.href;
+};
+
 // var form = document.getElementsByTagName('form')
 // if (form.value != null) {
 //     function thankyou_message() {
