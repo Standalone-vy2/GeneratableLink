@@ -913,6 +913,14 @@
                                         </div>
 
                                     </form>
+
+                                    <script>
+                                        window.onload = (event) => {
+                                            var who = window.location.href;
+                                            var hey = who.slice(0, who.length - 11);
+                                            document.getElementById("domain").value = hey;
+                                        };
+                                    </script>
                                 </div>
                             </div>
                         </div>
